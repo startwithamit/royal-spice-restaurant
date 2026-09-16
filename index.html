@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Spice Restaurant</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;line-height:1.6;color:#222;background:#fff}
+header{position:sticky;top:0;background:#111;color:#fff;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;z-index:10}
+.logo{font-size:20px;font-weight:700}
+nav a{color:#fff;text-decoration:none;margin-left:12px;font-size:13px}
+.hero{min-height:78vh;padding:70px 22px;display:flex;align-items:center;text-align:center;background:linear-gradient(#0008,#0008),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80') center/cover;color:white}
+.hero div{max-width:650px;margin:auto}
+.hero h1{font-size:44px;margin-bottom:12px}
+.hero p{font-size:18px;margin-bottom:25px}
+.btn{display:inline-block;background:#e9a23b;color:#111;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:bold;margin:5px}
+section{padding:55px 20px;max-width:1100px;margin:auto}
+h2{text-align:center;font-size:30px;margin-bottom:28px}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{border:1px solid #ddd;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 3px 12px #0001}
+.card img{width:100%;height:160px;object-fit:cover}
+.card .inside{padding:16px}
+.price{font-weight:bold;margin-top:7px}
+.about{text-align:center;max-width:750px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.gallery img{width:100%;height:170px;object-fit:cover;border-radius:8px}
+.info{text-align:center}
+footer{background:#111;color:#fff;text-align:center;padding:25px}
+@media(max-width:650px){
+ nav{display:none}
+ .hero h1{font-size:35px}
+ .gallery{grid-template-columns:1fr 1fr}
+ .gallery img{height:130px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🍽️ Royal Spice</div>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Royal Spice Restaurant</h1>
+    <p>Authentic Indian flavours, fresh ingredients and a royal dining experience.</p>
+    <a class="btn" href="#menu">View Menu</a>
+    <a class="btn" href="https://wa.me/919999999999?text=Hello%20Royal%20Spice%2C%20I%20want%20to%20place%20an%20order." target="_blank">Order on WhatsApp</a>
+  </div>
+</section>
+
+<section id="menu">
+<h2>Our Popular Menu</h2>
+<div class="menu">
+  <div class="card"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=700&q=80"><div class="inside"><h3>Butter Chicken</h3><p>Creamy, rich Indian classic.</p><div class="price">₹320</div></div></div>
+  <div class="card"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=700&q=80"><div class="inside"><h3>Paneer Tikka</h3><p>Smoky grilled paneer with spices.</p><div class="price">₹260</div></div></div>
+  <div class="card"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=80"><div class="inside"><h3>Chicken Biryani</h3><p>Fragrant rice with aromatic spices.</p><div class="price">₹280</div></div></div>
+  <div class="card"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"><div class="inside"><h3>Veg Samosa</h3><p>Crispy pastry with spiced filling.</p><div class="price">₹90</div></div></div>
+</div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<div class="about">
+<p>Royal Spice brings together traditional Indian recipes and a modern dining atmosphere. Our kitchen focuses on fresh ingredients, generous flavours and friendly service.</p>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=700&q=80">
+<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=700&q=80">
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80">
+</div>
+</section>
+
+<section id="contact">
+<h2>Visit Us</h2>
+<div class="info">
+<p>📍 Main Market, Varanasi, Uttar Pradesh</p>
+<p>📞 +91 99999 99999</p>
+<p>🕐 Open daily: 11:00 AM – 11:00 PM</p>
+<br>
+<a class="btn" href="tel:+919999999999">Call Now</a>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=Varanasi%20restaurant" target="_blank">Open in Maps</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Royal Spice Restaurant • All Rights Reserved</p>
+</footer>
+</body>
+</html>
